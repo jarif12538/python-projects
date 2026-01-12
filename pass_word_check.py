@@ -3,6 +3,7 @@ is_long_enough = len(password) >= 10
 has_uppercase = any(char.isupper() for char in password)
 has_digit = any(char.isdigit() for char in password)
 has_special_char = any(not char.isalnum() for char in password)
+'''Evaluate password strength based on criteria'''
 if is_long_enough and has_uppercase and has_digit and has_special_char:
     print("it's a Strong password")
 elif is_long_enough and (has_uppercase or has_digit or has_special_char):
