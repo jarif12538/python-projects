@@ -7,3 +7,10 @@ def generate_password(length=12):
     uppercase = string.ascii_uppercase
     digits = string.digits
     special = string.punctuation
+
+    guranteed_characters = [
+        secrets.choice(lowercase),
+        secrets.choice(uppercase),
+        secrets.choice(digits),
+        secrets.choice(special)
+    ]
