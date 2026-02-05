@@ -14,3 +14,9 @@ def generate_password(length=12):
         secrets.choice(digits),
         secrets.choice(special)
     ]
+    store = lowercase + uppercase + digits + special
+    password = guranteed_characters + [secrets.choice(store) for _ in range(length - 4)]
+
+    secrets.SystemRandom().shuffle(password)
+    return ''.join(password)
+print(generate_password(20))
