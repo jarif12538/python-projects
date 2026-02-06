@@ -12,12 +12,11 @@ num = 24
 ang = 360 / num
 
 palette = [
-    (45, 34, 26),   # dark umber
-    (92, 76, 56),   # warm brown
-    (140, 116, 84), # tan
-    (70, 58, 44),   # walnut
+    (45, 34, 26),
+    (92, 76, 56),   
+    (140, 116, 84), 
+    (70, 58, 44),   
 ]
-
 for index in range(num):
     color(palette[index % len(palette)])
     for arm in range(4):
@@ -33,5 +32,4 @@ for index in range(num):
         forward(40)
         left(45)
         forward(arc)
-       
 done()
