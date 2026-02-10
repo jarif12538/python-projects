@@ -1,8 +1,7 @@
 import ipywidgets as widgets
 from IPython.display import display
-slider = widgets.IntSlider(value=50, min=1, max=100,description='number:')
+slider = widgets.IntSlider(value=50, min=1, max=100,description='Number:')
 out = widgets.Output()
-display(slider, out)
 def update(change):
     with out:
         out.clear_output()
