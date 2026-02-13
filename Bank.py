@@ -11,11 +11,13 @@ def main():
     balance=0
     is_running = True
     while is_running :
-        print("Welcome to the Bank!")
+        print('-------*********************************-------')
+        print("Welcome to Independent Bank!")
         print("1. Show Balance")
         print("2. Deposit")
         print("3. Withdraw")
         print("4. Exit")
+        print('-------*********************************-------')
         choice = int(input("Enter your choice: "))
         if choice == 1:
             Show_balance(balance)
@@ -29,6 +31,7 @@ def main():
             is_running = False
         else:
             print("Invalid choice. Please try again.")
+    print('-------*********************************-------')
     print("Thank you for using Independence Bank. Goodbye!")
 if __name__ == "__main__":
     main()
