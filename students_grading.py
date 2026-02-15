@@ -8,19 +8,24 @@ def update_student_grade(name, grade):
         student_grade[name] = grade
         print(f"Updating grade for {name}: {grade}")
     else:
+        print("**************************************")
         print(f"Student {name} not found. Cannot update grade.")
+        print("**************************************")
 def delete_student_grade(name):
     if name in student_grade:
         del student_grade[name]
         print(f"Deleted grade for {name}.")
     else:
+        print("**************************************")
         print(f"Student {name} not found. Cannot delete grade.")
+        print("**************************************")
 def view_student_grade(name):
     if name in student_grade:
-        for student, grade in student_grade.items():
-            print(f"{student}: {grade}")
+        print(f"{name}: {student_grade[name]}")
     else:
+        print("**************************************")
         print(f"Student {name} not found. Cannot view grade.")
+        print("**************************************")
 def main():
     while True:
         print("\nStudent Grading System")
@@ -49,3 +54,6 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
