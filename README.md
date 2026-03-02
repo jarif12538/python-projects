@@ -1,0 +1,1 @@
+This repository contains multiple small Python programs developed to improve scripting and problem-solving skills. The projects include automation scripts, logic-based exercises, and practice implementations.
