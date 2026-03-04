@@ -4,8 +4,11 @@ def show_item(item):
 def show_total(order_list):
     total_items = len(order_list)
     total_price = sum(item['price'] for item in order_list)
+    total_tax = total_price * 0.07  
     print(f"\nTotal Items: {total_items}")
     print(f"Total Price: ${total_price:.2f}")
+    print(f"Total Tax: ${total_tax:.2f}")
+    print(f"Total Amount: ${total_price + total_tax:.2f}")
 
 def main():
     print("Welcome to the Coffee ECB Express!")
